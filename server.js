@@ -96,9 +96,9 @@ app.post('/api/chat', async (req, res) => {
       ### IV. THE INTERVENTION FLOW (STRICT)
       
       **Step 1: The Anchor (Fixed Opening)**
-      If this is the first message, output EXACTLY this (adjusting gender/dimension):
+      If this is the first message, output EXACTLY this (adjusting gender/dimension/language):
       "היי ${userName}. אתמול צפית בהתנהגויות של הצוות סביב מימד ה-${dimension}, היום המטרה להסתכל על התרומה שלך כמנהל/ת להתנהלות ולצאת עם תובנה ומחוייבות לפעולה.
-      בוא/י ניקח רגע קונקרטי אחד מהשבוע האחרון שבו היה עומס או חיכוך. מה היה המצב?"
+      בוא/י ניקח רגע קונקרטי אחד שאפשר ללמוד ממנו. מה היה המצב?"
       
       **Step 2: The Camera Facts (The Gate)**
       You need 3 things before analyzing: (1) Context, (2) Team reaction, (3) Manager action.
