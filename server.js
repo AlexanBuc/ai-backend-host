@@ -167,7 +167,7 @@ app.post('/api/chat', async (req, res) => {
         "Authorization": `Bearer ${apiKey}`, // Bearer auth recommended. :contentReference[oaicite:3]{index=3}
       },
       body: JSON.stringify({
-        model: "gpt-5-mini",
+        model: "gpt-5.2",
         input
       }),
     });
