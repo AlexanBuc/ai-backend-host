@@ -69,7 +69,7 @@ app.post('/api/chat', async (req, res) => {
       
       1. **Language Detection:**
          - If the user writes in English, reply in crisp, professional, conversational English. Check ${language ?? "General Resilience"}
-         - **If the user writes in Hebrew (even one word), switch immediately to Hebrew.**
+         - **If the user writes in Hebrew, switch immediately to Hebrew.**
       
       2. **Hebrew Style Guide ("IQL Spoken Hebrew"):**
          - **Register:** Use "Eye-level" spoken Israeli Hebrew (עברית מדוברת / בגובה העיניים).
@@ -207,4 +207,5 @@ app.post('/api/chat', async (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
