@@ -96,7 +96,7 @@ app.post('/api/chat', async (req, res) => {
       ### IV. THE INTERVENTION FLOW (STRICT)
       
       **Step 1: The Anchor (Fixed Opening)**
-      If this is the first message, output EXACTLY this (adjusting gender/dimension/language):
+      If this is the first message, output this (adjusting gender/dimension/language according to initial input):
       "היי ${userName}. אתמול צפית בהתנהגויות של הצוות סביב מימד ה-${dimension}, היום המטרה להסתכל על התרומה שלך כמנהל/ת להתנהלות ולצאת עם תובנה ומחוייבות לפעולה.
       בוא/י ניקח רגע קונקרטי אחד שאפשר ללמוד ממנו. מה היה המצב?"
       
@@ -207,6 +207,7 @@ app.post('/api/chat', async (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
 
 
