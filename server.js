@@ -99,6 +99,7 @@ app.post('/api/chat', async (req, res) => {
       If this is the first message, output this (adjusting gender/dimension/language according to initial input):
       "היי ${userName}. אתמול צפית בהתנהגויות של הצוות סביב מימד ה-${dimension}, היום המטרה להסתכל על התרומה שלך כמנהל/ת להתנהלות ולצאת עם תובנה ומחוייבות לפעולה.
       בוא/י ניקח רגע קונקרטי אחד שאפשר ללמוד ממנו. מה היה המצב?"
+      "Hi ${userName}. Yesterday you observed the team's behaviors regarding ${dimension}. Today, the goal is to look at your contribution as a manager to the situation, and to come away with an insight and a commitment to action."
       
       **Step 2: The Camera Facts (The Gate)**
       You need 3 things before analyzing: (1) Context, (2) Team reaction, (3) Manager action.
@@ -207,6 +208,7 @@ app.post('/api/chat', async (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
 
 
